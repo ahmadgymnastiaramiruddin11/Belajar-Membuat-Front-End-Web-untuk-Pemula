@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Agym Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Ahmad Agym Bookshelf</h1>
+        <p>Sebuah App Sederhana Untuk Inventaris Buku Menjadi Lebih Terorganisir</p>
+        <form id="bookForm">
+            <input type="text" id="title" placeholder="Judul Buku" required>
+            <input type="text" id="author" placeholder="Penulis" required>
+            <input type="number" id="year" placeholder="Tahun" required>
+            <button type="submit">Tambah Buku</button>
+        </form>
+        
+        <div class="bookshelf">
+            <div class="book-rack" id="unread">
+                <h2>Belum Selesai Dibaca</h2>
+                <div class="book-list" id="unreadBooks"></div>
+            </div>
+            <div class="book-rack" id="read">
+                <h2>Selesai Dibaca</h2>
+                <div class="book-list" id="readBooks"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

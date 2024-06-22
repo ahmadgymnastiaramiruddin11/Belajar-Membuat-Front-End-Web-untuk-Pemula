@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('asset/img/bg.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    flex: 1 1 200px;
+}
+
+form input:focus {
+    border-color: #007bff;
+}
+
+form button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 100px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.book-rack {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.book-rack h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    margin-top: 20px;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.book-item:hover {
+    background-color: #f0f0f0;
+}
+
+.book-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.book-item img {
+    width: 50px;
+    height: 75px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.book-item button {
+    margin-left: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-item button:hover {
+    color: #fff;
+}
+
+.book-item .edit-button {
+    background-color: #ffc107;
+}
+
+.book-item .edit-button:hover {
+    background-color: #e0a800;
+}
+
+.book-item .toggle-button {
+    background-color: #28a745;
+}
+
+.book-item .toggle-button:hover {
+    background-color: #218838;
+}
+
+.book-item .delete-button {
+    background-color: #dc3545;
+}
+
+.book-item .delete-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .book-rack {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    form input, form button {
+        flex: 1 1 100%;
+    }
+}
